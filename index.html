@@ -13,8 +13,8 @@
     }
 
     header {
-      background: linear-gradient(135deg, #5f6cff, #a07bff);
-      color: white;
+      background: linear-gradient(135deg, #e8f3e8, #f7ecec);
+      color: #2f3e2f;
       text-align: center;
       padding: 4rem 1rem;
     }
@@ -38,22 +38,25 @@
     }
 
     .presentation-container {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 */
-      border-radius: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      padding-top: 0;
+      border-radius: 0;
       overflow: hidden;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: none;
       background: white;
+      z-index: 10;
     }
 
     .presentation-container iframe {
       position: absolute;
-      top: 0;
-      left: 0;
+      inset: 0;
       width: 100%;
       height: 100%;
-      border: 0;
+      border: none;
     }
 
     footer {
@@ -67,8 +70,12 @@
 <body>
 
   <header>
-    <h1>My Portfolio</h1>
-    <p>Showcasing my work beautifully and responsively</p>
+    <h1 style="font-size: 3.2rem; font-weight: 800; margin: 0; letter-spacing: -1px; color:#2f3e2f;">
+      My Portfolio
+    </h1>
+    <p style="margin-top: 0.75rem; font-size: 1.25rem; opacity: 0.9; font-weight: 400; color:#4a5a4a;">
+      A selection of my professional work
+    </p>
   </header>
 
   <div class="content">
