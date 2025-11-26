@@ -1,10 +1,85 @@
-<!doctype html>
-<html lang="fi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Raporttiesimerkit</title>
-  <body>
-<iframe src="https://1drv.ms/p/c/f90c7327857394f1/IQSQehU8S6cFRYxsp676CUxOAXlkT5U1KU86ZJBjJ0DXYEM?em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=0" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-  </body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #5f6cff, #a07bff);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 1rem;
+    }
+
+    .presentation-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+      background: white;
+    }
+
+    .presentation-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Showcasing my work beautifully and responsively</p>
+  </header>
+
+  <div class="content">
+    <div class="presentation-container">
+      <iframe src="https://1drv.ms/p/c/f90c7327857394f1/IQSQehU8S6cFRYxsp676CUxOAXlkT5U1KU86ZJBjJ0DXYEM?em=2&wdAr=1.7777777777777777" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 My Portfolio
+  </footer>
+
+</body>
 </html>
